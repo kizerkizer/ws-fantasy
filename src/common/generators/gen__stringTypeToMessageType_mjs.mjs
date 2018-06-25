@@ -2,8 +2,8 @@ import fs from 'fs';
 
 console.log(`generating temp/common/stringTypeToMessageType.mjs`);
 
-import h2c from '../common/hyphen2camel.mjs';
-import validators from '../common/messageTypes.mjs';
+import h2c from '../hyphen2camel.mjs';
+import validators from '../messageTypes.mjs';
 
 let js = '';
 

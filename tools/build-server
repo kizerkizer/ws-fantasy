@@ -9,11 +9,11 @@ cp -r src/ temp
 
 # code generators
 node --experimental-modules \
-  ./temp/generators/gen__MessageTypes_mjs.mjs
+  ./temp/common/generators/gen__MessageTypes_mjs.mjs
 node --experimental-modules \
-  ./temp/generators/gen__messageTypeToStringType_mjs.mjs
+  ./temp/common/generators/gen__messageTypeToStringType_mjs.mjs
 node --experimental-modules \
-  ./temp/generators/gen__stringTypeToMessageType_mjs.mjs
+  ./temp/common/generators/gen__stringTypeToMessageType_mjs.mjs
 
 cp -r ./temp/server ./dist-server
 cp -r ./temp/common ./dist-server
