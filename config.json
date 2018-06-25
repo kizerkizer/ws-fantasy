@@ -1,0 +1,6 @@
+{
+  "storage": "./data",
+  "webSocketServerOptions": {
+    "port": 4040
+  }
+}

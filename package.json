@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "metaproperties": "^1.0.2",
+    "uws": "^10.148.0"
+  }
+}

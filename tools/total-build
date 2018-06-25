@@ -1,0 +1,4 @@
+#! /bin/bash
+
+./tools/build-server
+./tools/build-client

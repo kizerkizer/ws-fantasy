@@ -1,0 +1,4 @@
+#! /bin/bash
+
+node --experimental-modules \
+  dist-server/server/index.mjs
