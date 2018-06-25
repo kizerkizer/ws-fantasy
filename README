@@ -1,1 +1,39 @@
 ws-fantasy
+
+src/
+├── client
+│   ├── css
+│   │   └── style.css
+│   ├── html
+│   │   ├── debug.html
+│   │   └── index.html
+│   └── js
+│       ├── components
+│       │   └── sampleButton.mjs
+│       ├── dom.mjs
+│       ├── index.mjs
+│       ├── jsondebugger.mjs
+│       ├── mailbox.mjs
+│       ├── protocol.mjs
+│       ├── rateLimiter.mjs
+│       ├── views
+│       │   └── sampleButton.js
+│       ├── waitCursor.mjs
+│       └── ws.mjs
+├── common
+│   ├── events.mjs
+│   ├── generators
+│   │   ├── gen__MessageTypes_mjs.mjs
+│   │   ├── gen__messageTypeToStringType_mjs.mjs
+│   │   └── gen__stringTypeToMessageType_mjs.mjs
+│   ├── hyphen2camel.mjs
+│   ├── messageTypes.mjs
+│   └── sjprotocol.mjs
+└── server
+    ├── index.mjs
+    ├── mailbox.mjs
+    ├── Player.mjs
+    ├── protocol.mjs
+    ├── rateLimiter.mjs
+    ├── storage.mjs
+    └── webSocketServer.mjs
