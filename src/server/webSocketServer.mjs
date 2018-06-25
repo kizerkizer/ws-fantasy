@@ -1,7 +1,9 @@
 import uws from 'uws';
+import fs from 'fs';
 
 import { emit } from '../common/events.mjs';
-import config from './config.json';
+
+const config = JSON.parse(fs.readFileSync('./config.json').toString());
 
 const server = new uws.Server(config.webSocketServerOptions),
   errorMessage = `Invalid input`;

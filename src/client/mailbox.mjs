@@ -16,12 +16,11 @@ on(`protocol/message`, (type, body) => {
 });
 
 const sendMessage = (symbolType, body) => {
-  console.log(symbolType);
   if (!messageTypeToStringType[symbolType]) {
     throw new TypeError(`Invalid type`);
   }
   let stringType = messageTypeToStringType[symbolType];
-  console.log(stringType);
+  emit(`mailbox/sendMessage`);
   protocol.sendSjmessage(stringType, body);
 }
 

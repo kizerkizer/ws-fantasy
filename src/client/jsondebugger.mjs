@@ -4,6 +4,10 @@ import { emit, on } from '../common/events.mjs';
 import stringTypeToMessageType from '../common/stringTypeToMessageType.mjs';
 import symbolTypeToStringType from '../common/messageTypeToStringType.mjs';
 
+import './rateLimiter.mjs';
+import './waitCursor.mjs';
+import './mailbox.mjs';
+
 if ($.select('#div-left')) {
   let editor = ace.edit('div-left');
   editor.session.setMode('ace/mode/json');
