@@ -18,8 +18,8 @@ node --experimental-modules \
 cp ./temp/client/html/*.html ./dist-client/
 cp ./temp/client/css/*.css ./dist-client/
 
-rollup ./temp/client/jsondebugger.mjs \
+rollup ./temp/client/index.mjs \
   --format iife \
-  --file ./dist-client/jsondebugger.js
+  --file ./dist-client/game.js
 
 rm -r temp
